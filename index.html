@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/img/icon-page.ico">
+    <title>Calculadora de Créditos de Sistemas UPAO</title>
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="text-center">
+            <h2 style="font-size: 2.5em;">Calculadora de Créditos de Sistemas UPAO</h2>
+            <p>¡Bienvenido alumno de Sistemas!, aquí descubrirás cuál es el número de créditos del ciclo respectivo que te asignarán en el siguiente ciclo.</p>
+            <p style="font-weight: bold;font-size: 15px">Recuerda que el total de créditos para toda la carrera es de 210</p>
+            
+            <div class="form-group">
+                <input type="number" id="creditsInput" class="form-control form-control-lg" placeholder="Ingresa tus créditos actuales aprobados" style="font-size: 26px;text-align:center">
+            </div>
+
+            <button onclick="calculateCredits()" class="btn btn-primary btn-lg">Calcular</button>
+
+            <div id="result" class="mt-3"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
